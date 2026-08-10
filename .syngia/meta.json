@@ -1,0 +1,63 @@
+{
+  "summary": "A tiny Python tool that reads WakaTime JSON exports and generates a single self-contained static HTML explorer with bar charts, activity heatmaps, and drill-downs. No server or external dependencies required.",
+  "entropy": 8,
+  "tree": [
+    {
+      "name": ".syngia",
+      "relPath": ".syngia",
+      "type": "dir",
+      "children": [
+        {
+          "name": "meta.json",
+          "relPath": ".syngia/meta.json",
+          "type": "file",
+          "size": 11001
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "relPath": "data",
+      "type": "dir",
+      "children": [
+        {
+          "name": "20260726.json",
+          "relPath": "data/20260726.json",
+          "type": "file",
+          "size": 85374866
+        }
+      ]
+    },
+    {
+      "name": ".gitignore",
+      "relPath": ".gitignore",
+      "type": "file",
+      "size": 209
+    },
+    {
+      "name": "image.png",
+      "relPath": "image.png",
+      "type": "file",
+      "size": 449861
+    },
+    {
+      "name": "README.md",
+      "relPath": "README.md",
+      "type": "file",
+      "size": 842
+    },
+    {
+      "name": "visualize.html",
+      "relPath": "visualize.html",
+      "type": "file",
+      "size": 1195384
+    },
+    {
+      "name": "visualize.py",
+      "relPath": "visualize.py",
+      "type": "file",
+      "size": 20450
+    }
+  ],
+  "archived": true
+}
