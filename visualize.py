@@ -1,6 +1,6 @@
 """Build a self-contained static HTML page to explore one day of WakaTime data.
 
-Reads the latest WakaTime export under data/ (YYYYMMDD.json), keeps only the per-day project
+Reads the latest WakaTime export under data/ (YYYYMMDD-daily.json), keeps only the per-day project
 durations (plus language/editor drill-down), and embeds that compact dataset
 into a single static HTML file. Open visualize.html in any browser - no server,
 no CORS, no external dependencies.
@@ -18,10 +18,13 @@ OUT = os.path.join(HERE, "visualize.html")
 
 
 def latest_source():
-    """Newest YYYYMMDD.json under data/ (WakaTime exports are cumulative)."""
-    files = sorted(glob.glob(os.path.join(DATA_DIR, "*.json")))
+    """Newest YYYYMMDD-daily.json under data/ (WakaTime exports are cumulative).
+
+    Heartbeat backups (YYYYMMDD-heartbeats.json) are ignored on purpose.
+    """
+    files = sorted(glob.glob(os.path.join(DATA_DIR, "*-daily.json")))
     if not files:
-        raise SystemExit("No *.json found in " + DATA_DIR)
+        raise SystemExit("No *-daily.json found in " + DATA_DIR)
     return files[-1]
 
 MIN_SECONDS = 600  # drop days with less than 10 minutes of coding time

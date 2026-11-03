@@ -18,9 +18,14 @@ Features:
 
 ## Setup
 
-1. Export your data from WakaTime as JSON.
-2. Place the file under `data/` named `YYYYMMDD.json`
-   (e.g. `data/20260726.json`). The newest file is picked automatically.
+1. Export your data from WakaTime as JSON:
+   - Go to **Account** on wakatime.com, then the **Export** section.
+   - Press **Export stats**, then choose the format:
+     - **Daily** — per-day summaries (~80 MB); this is what `visualize.py` reads.
+     - **Heartbeats** — raw per-event data (500 MB+); use this for backup.
+2. Place the file under `data/` named `YYYYMMDD-daily.json`
+   (e.g. `data/20261019-daily.json`). The newest file is picked automatically.
+   Heartbeat backups (`YYYYMMDD-heartbeats.json`) are ignored.
 3. Run:
 
    ```bash

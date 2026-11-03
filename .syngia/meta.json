@@ -10,8 +10,7 @@
         {
           "name": "meta.json",
           "relPath": ".syngia/meta.json",
-          "type": "file",
-          "size": 11001
+          "type": "file"
         }
       ]
     },
@@ -21,42 +20,46 @@
       "type": "dir",
       "children": [
         {
-          "name": "20260726.json",
-          "relPath": "data/20260726.json",
-          "type": "file",
-          "size": 85374866
+          "name": "20260726-daily.json",
+          "relPath": "data/20260726-daily.json",
+          "type": "file"
+        },
+        {
+          "name": "20261019-daily.json",
+          "relPath": "data/20261019-daily.json",
+          "type": "file"
+        },
+        {
+          "name": "20261019-heartbeats.json",
+          "relPath": "data/20261019-heartbeats.json",
+          "type": "file"
         }
       ]
     },
     {
       "name": ".gitignore",
       "relPath": ".gitignore",
-      "type": "file",
-      "size": 209
+      "type": "file"
     },
     {
       "name": "image.png",
       "relPath": "image.png",
-      "type": "file",
-      "size": 449861
+      "type": "file"
     },
     {
       "name": "README.md",
       "relPath": "README.md",
-      "type": "file",
-      "size": 842
+      "type": "file"
     },
     {
       "name": "visualize.html",
       "relPath": "visualize.html",
-      "type": "file",
-      "size": 1195384
+      "type": "file"
     },
     {
       "name": "visualize.py",
       "relPath": "visualize.py",
-      "type": "file",
-      "size": 20450
+      "type": "file"
     }
   ],
   "archived": true
